@@ -1,6 +1,4 @@
-<!!DOCTYPE HTML>
-<html lang="en">
-<head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 <title>Loads of span elements</title>
@@ -64,24 +62,3 @@ body {
 }
 </style>
 </head>
-<body> 
- <h1 id="header" class="nojs">&nbsp;</h1>
- <div id="loads-of-span-elements" class="hide"></div>
-<script>
-(function(d) {
-   'use strict';
-   var div = d.getElementById( 'loads-of-span-elements' ); 
-             div.classList.remove( 'hide' );
-             div.classList.add( 'show' );
-             d.getElementById( 'header' ).classList.remove( 'nojs' );
-             d.getElementById( 'header' ).classList.add( 'js' );
-   var quantity = 48;       
-   for ( var c = 0; c < quantity; c ++ ){
-     var span = d.createElement( 'span' );
-         span.appendChild( d.createTextNode( 'example' ) );
-         div.appendChild( span );
-      }
-}(document));
-</script>
-</body>
-</html>
